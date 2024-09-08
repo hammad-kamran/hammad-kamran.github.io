@@ -6,102 +6,161 @@
     <title>Hammad Kamran Faruki - CV</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 20px;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
             color: #333;
+            background-color: #f4f4f4;
         }
         .container {
-            max-width: 800px;
+            width: 80%;
             margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         h1, h2, h3 {
-            color: #007BFF;
+            color: #000;
         }
-        .contact-info, .section {
+        h1 {
+            font-size: 2.5em;
+            margin-top: 0;
+        }
+        h2 {
+            font-size: 2em;
+            margin-top: 0;
+        }
+        h3 {
+            font-size: 1.5em;
+            border-bottom: 2px solid #000;
+            padding-bottom: 5px;
             margin-bottom: 20px;
+            margin-top: 0;
+        }
+        .contact-info {
+            margin-bottom: 20px;
+            font-size: 1.1em;
         }
         .contact-info p {
             margin: 5px 0;
         }
-        .section h2 {
-            border-bottom: 2px solid #007BFF;
+        .section {
+            margin-bottom: 20px;
+        }
+        .experience-item, .education-item {
+            margin-bottom: 15px;
+        }
+        .skills-list, .languages-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .skills-list li, .languages-list li {
+            background: #e6e6e6;
+            margin-bottom: 5px;
+            padding: 8px;
+            border-radius: 4px;
+            font-size: 1.1em;
+        }
+        .links a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        .links a:hover {
+            text-decoration: underline;
+        }
+        .header {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .header h2 {
+            margin: 0;
+            font-size: 1.8em;
+        }
+        .section-title {
+            font-size: 1.2em;
+            color: #000;
+            border-bottom: 2px solid #000;
             padding-bottom: 5px;
-        }
-        ul {
-            list-style-type: disc;
-            margin-left: 20px;
-        }
-        .skills {
-            display: flex;
-            flex-wrap: wrap;
-        }
-        .skills div {
-            width: 45%;
-            margin: 5px 0;
+            margin-bottom: 10px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <header>
+        <div class="header">
             <h1>Hammad Kamran Faruki</h1>
-            <div class="contact-info">
-                <p><strong>Phone:</strong> +92 312 7269761</p>
-                <p><strong>Email:</strong> <a href="mailto:hammadkamran777@gmail.com">hammadkamran777@gmail.com</a></p>
-                <p><strong>Location:</strong> Gujrat, Pakistan</p>
-                <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/hammad-kamran-faruki">www.linkedin.com/in/hammad-kamran-faruki</a></p>
-                <p><strong>GitHub:</strong> <a href="https://github.com/hammad-kamran">https://github.com/hammad-kamran</a></p>
-            </div>
-        </header>
-        
-        <section class="section">
-            <h2>Professional Summary</h2>
+            <h2>DevOps Engineer</h2>
+        </div>
+        <div class="contact-info">
+            <p><strong>Phone:</strong> +92 312 7269761</p>
+            <p><strong>Email:</strong> <a href="mailto:hammadkamran777@gmail.com">hammadkamran777@gmail.com</a></p>
+            <p><strong>Location:</strong> Gujrat, Pakistan</p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/hammad-kamran-faruki">www.linkedin.com/in/hammad-kamran-faruki</a></p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/hammad-kamran">https://github.com/hammad-kamran</a></p>
+        </div>
+        <div class="section">
+            <h3 class="section-title">Professional Summary</h3>
             <p>I am an enthusiastic DevOps Engineer with a solid foundation in DevOps principles and hands-on experience with essential tools and technologies. My focus is on streamlining processes, enhancing system reliability, and ensuring smooth deployment and integration.</p>
-        </section>
-        
-        <section class="section">
-            <h2>Professional Experience</h2>
-            <h3>OpsOura</h3>
-            <p><strong>Associate DevOps Engineer</strong> | Jun 2024 – Present</p>
-            <ul>
-                <li><strong>Environment Management:</strong> Implemented and managed containerized applications using Docker, improving deployment efficiency and scalability.</li>
-                <li><strong>Automation:</strong> Developed and maintained CI/CD pipelines using Jenkins and GitLab CI, reducing manual intervention and accelerating the release process.</li>
-                <li><strong>Monitoring and Logging:</strong> Set up and configured monitoring tools such as Prometheus and Grafana to ensure system reliability and performance.</li>
-                <li><strong>Collaboration:</strong> Worked closely with development and operations teams to streamline workflows, resolve issues, and enhance system performance.</li>
-                <li><strong>Security:</strong> Applied security best practices in DevOps processes, including vulnerability scanning and implementing secure coding standards.</li>
-            </ul>
-        </section>
-        
-        <section class="section">
-            <h2>Skills and Tools</h2>
-            <div class="skills">
-                <div><strong>Containerization and Orchestration:</strong> Docker, Podman, Kubernetes</div>
-                <div><strong>CI/CD Pipelines:</strong> Jenkins, GitLab CI, GitHub Actions, CircleCI</div>
-                <div><strong>Configuration Management:</strong> Ansible, CloudFormation</div>
-                <div><strong>Version Control Systems:</strong> Git, GitHub, GitLab</div>
-                <div><strong>Monitoring & Visualization:</strong> Prometheus, Grafana</div>
-                <div><strong>Search & Analytics:</strong> Elasticsearch, Kibana, Metricbeat</div>
-                <div><strong>Scripting & Automation:</strong> Bash, Crontab</div>
-                <div><strong>Cloud Platforms:</strong> AWS, Azure</div>
-                <div><strong>Operating Platforms:</strong> Linux, Windows (WSL)</div>
-                <div><strong>Programming Languages:</strong> Python, JavaScript</div>
+        </div>
+        <div class="section">
+            <h3 class="section-title">Professional Experience</h3>
+            <div class="experience-item">
+                <h4>Associate DevOps Engineer</h4>
+                <p><strong>Company:</strong> OpsOura</p>
+                <p><strong>Duration:</strong> Jun 2024 – Present</p>
+                <ul>
+                    <li>Implemented and managed containerized applications using Docker, improving deployment efficiency and scalability.</li>
+                    <li>Developed and maintained CI/CD pipelines using Jenkins and GitLab CI, reducing manual intervention and accelerating the release process.</li>
+                    <li>Set up and configured monitoring tools such as Prometheus and Grafana to ensure system reliability and performance.</li>
+                    <li>Worked closely with development and operations teams to streamline workflows, resolve issues, and enhance system performance.</li>
+                    <li>Applied security best practices in DevOps processes, including vulnerability scanning and implementing secure coding standards.</li>
+                </ul>
             </div>
-        </section>
-        
-        <section class="section">
-            <h2>Education</h2>
-            <p><strong>Al Nafi | EduQual</strong></p>
-            <ul>
-                <li>Diploma in DevOps and Cloud Advancement - May 2024 - Present</li>
-                <li>Diploma in Cloud Cyber Security, Cloud Computing</li>
+            <div class="experience-item">
+                <h4>Cyber Security</h4>
+                <p><strong>Company:</strong> Al-Nafi E-Learning Pvt. Ltd | Intern</p>
+                <p><strong>Duration:</strong> Nov 2022 – Dec 2023</p>
+                <ul>
+                    <li>Completed diverse training programs in LinkedIn, Linux, Python, CISSP, RHEL, and Data Science.</li>
+                    <li>Developed strong security skills in Ethical Hacking, Incident Response, and ISO standards.</li>
+                    <li>Exhibited dedication and practical skills through hands-on learning and commitment.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="section">
+            <h3 class="section-title">Skills and Tools</h3>
+            <ul class="skills-list">
+                <li>Containerization and Orchestration: Docker, Podman, Kubernetes</li>
+                <li>CI/CD Pipelines: Jenkins, GitLab CI, GitHub Actions, CircleCI</li>
+                <li>Configuration Management: Ansible, CloudFormation</li>
+                <li>Version Control Systems: Git, GitHub, GitLab</li>
+                <li>Monitoring & Visualization: Prometheus, Grafana</li>
+                <li>Search & Analytics: Elasticsearch, Kibana, Metricbeat</li>
+                <li>Scripting & Automation: Bash, Crontab</li>
+                <li>Cloud Platforms: AWS, Azure</li>
+                <li>Operating Platforms: Linux, Windows (WSL)</li>
+                <li>Programming Languages: Python, JavaScript</li>
             </ul>
-        </section>
-        
-        <section class="section">
-            <h2>Languages</h2>
-            <p>Proficient in English, Urdu</p>
-        </section>
+        </div>
+        <div class="section">
+            <h3 class="section-title">Education</h3>
+            <div class="education-item">
+                <h4>Al Nafi | EduQual</h4>
+                <p><strong>Diploma in DevOps and Cloud Advancement:</strong> May 2024 – Present</p>
+                <p><strong>Diploma in Cloud Cyber Security, Cloud Computing:</strong> Nov 2022 – Dec 2023</p>
+            </div>
+        </div>
+        <div class="section">
+            <h3 class="section-title">Languages</h3>
+            <ul class="languages-list">
+                <li>Proficient in English, Urdu</li>
+            </ul>
+        </div>
     </div>
 </body>
 </html>
